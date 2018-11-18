@@ -26,7 +26,7 @@ public class DownloadUtils {
             public void subscribe(final ObservableEmitter<byte[]> emitter) throws Exception {
                 final Request request = new Request.Builder()
                         .url(url)
-                        .addHeader("api-key","Uv=e=yMBymo8In9FVA4Ub16Oleo=")
+                        .addHeader("api-key","xxx")
                         .build();
                 mOkHttpClient.newCall(request).enqueue(new Callback() {
                     @Override
