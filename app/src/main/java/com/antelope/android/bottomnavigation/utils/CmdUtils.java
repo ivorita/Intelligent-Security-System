@@ -15,7 +15,7 @@ public class CmdUtils {
     private OkHttpClient mOkHttpClient;
     public static final MediaType JSON
             = MediaType.parse("application/json; charset=utf-8");
-    String url = "http://api.heclouds.com/cmds?device_id=30964714&qos=0&timeout=300";
+    String url = "http://api.heclouds.com/cmds?device_id=xxxxxxx&qos=0&timeout=300";
 
     public CmdUtils(){
         mOkHttpClient = new OkHttpClient();
@@ -27,8 +27,8 @@ public class CmdUtils {
         RequestBody requestBody = RequestBody.create(JSON,json);
 
         Request request = new Request.Builder()
-                .url("http://api.heclouds.com/cmds?device_id=30964714&qos=0&timeout=300")
-                .addHeader("api-key","Uv=e=yMBymo8In9FVA4Ub16Oleo=")
+                .url("http://api.heclouds.com/cmds?device_id=xxxxxxx&qos=0&timeout=300")
+                .addHeader("api-key","xxx")
                 .post(requestBody)
                 .build();
 
